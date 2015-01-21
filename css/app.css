@@ -1,0 +1,47 @@
+
+a:focus, a:hover {
+	text-decoration: none;
+}
+header {
+	padding: 8px 0 5px 0;
+}
+.panel-group {
+  	margin-bottom: 3px;
+  	
+}
+.panel-default {
+  	border: none;
+}
+.panel-default>.panel-heading-edit {
+	background-color: #fff;
+	border-radius: 0;
+	padding: 0 10px;
+	border-color: #000;
+}
+.panel-body {
+  	padding: 0 15px;
+}
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+	border-top: none;
+}
+span.panel-title {
+	font-size: 13px;
+}
+.event {
+	padding: 20px 0;
+}
+span.day-date {
+	display: block;
+	font-size: 150%;
+	margin-top: -10px;
+}
+span.day-date small {
+	font-size: 50%;
+}
+span.day {
+	display: block;
+	margin-top: -30px;
+}
+.input-group {
+	margin-bottom: 5px;
+}
