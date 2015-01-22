@@ -8,7 +8,7 @@ a, a:visited {
 }
 a:focus, a:hover {
 	text-decoration: none;
-	text-shadow: 0 2px 0 #333333;
+	text-shadow: 0 1px 0 #333333;
 	color: #fff;
 }
 /* ------------------ Getting rid of gutters */
@@ -64,6 +64,28 @@ a:focus, a:hover {
 .input-group {
 	margin-bottom: 5px;
 }
+.input-group-addon {
+	color: #fff;
+	background-color: rgba(255,255,255,.3);
+	border: none;
+}
+.form-control, .btn-default {
+	color: #292929;
+	background-color: rgba(255,255,255,.5);
+	border: none;
+}
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #adadad;
+}
+.dropdown-menu li {
+	padding: 5px 0;
+	text-align: center;
+}
+.btn[type=submit] {
+	margin-left: 10px;
+}
 
 /* ----------------------------------------------------------------- Custom Styles */
 #january {
@@ -90,6 +112,46 @@ a:focus, a:hover {
 	background:      -o-linear-gradient(180deg, #55941B 10%, #27A116 90%); /* Opera 11.10+ */
 	background:         linear-gradient(180deg, #55941B 10%, #27A116 90%); /* W3C */   
 }
+#april {
+	padding-bottom: 20px;
+	background: -webkit-linear-gradient(180deg, #27A116 10%, #2D7000 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(180deg, #27A116 10%, #2D7000 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(180deg, #27A116 10%, #2D7000 90%); /* IE10 */
+	background:      -o-linear-gradient(180deg, #27A116 10%, #2D7000 90%); /* Opera 11.10+ */
+	background:         linear-gradient(180deg, #27A116 10%, #2D7000 90%); /* W3C */   
+}
+#may {
+	padding-bottom: 20px;
+	background: -webkit-linear-gradient(180deg, #2D7000 10%, #DB8B00 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(180deg, #2D7000 10%, #DB8B00 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(180deg, #2D7000 10%, #DB8B00 90%); /* IE10 */
+	background:      -o-linear-gradient(180deg, #2D7000 10%, #DB8B00 90%); /* Opera 11.10+ */
+	background:         linear-gradient(180deg, #2D7000 10%, #DB8B00 90%); /* W3C */   
+}
+#june {
+	padding-bottom: 20px;
+	background: -webkit-linear-gradient(180deg, #DB8B00 10%, #DB4900 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(180deg, #DB8B00 10%, #DB4900 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(180deg, #DB8B00 10%, #DB4900 90%); /* IE10 */
+	background:      -o-linear-gradient(180deg, #DB8B00 10%, #DB4900 90%); /* Opera 11.10+ */
+	background:         linear-gradient(180deg, #DB8B00 10%, #DB4900 90%); /* W3C */   
+}
+#july {
+	padding-bottom: 20px;
+	background: -webkit-linear-gradient(180deg, #DB4900 10%, #DB0000 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(180deg, #DB4900 10%, #DB0000 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(180deg, #DB4900 10%, #DB0000 90%); /* IE10 */
+	background:      -o-linear-gradient(180deg, #DB4900 10%, #DB0000 90%); /* Opera 11.10+ */
+	background:         linear-gradient(180deg, #DB4900 10%, #DB0000 90%); /* W3C */   
+}
+#august {
+	padding-bottom: 20px;
+	background: -webkit-linear-gradient(180deg, #DB0000 10%, #D10300 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(180deg, #DB0000 10%, #D10300 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(180deg, #DB0000 10%, #D10300 90%); /* IE10 */
+	background:      -o-linear-gradient(180deg, #DB0000 10%, #D10300 90%); /* Opera 11.10+ */
+	background:         linear-gradient(180deg, #DB0000 10%, #D10300 90%); /* W3C */   
+}
 /* --------------- Month + Year headers */
 .row-month {
 	padding: 10px 0;
@@ -101,9 +163,6 @@ a:focus, a:hover {
 .collapse-pad {
 	padding: 20px;
 	background-color: rgba(255,255,255,.5);
-}
-span.panel-title {
-	font-size: 13px;
 }
 /* -------------- Styling the dates (day + number) */
 span.day-date {
@@ -156,7 +215,6 @@ ul.additional-dates li {
 	border-bottom: 1px solid rgba(255,255,255,.2);
 	letter-spacing: 1px;
 }
-
 .panel-default>.panel-heading-edit {
 	background-color: rgba(255,255,255,.2);
 	border-radius: 0;

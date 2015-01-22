@@ -1,15 +1,34 @@
+<!-- NOTES:
+I know this is bad practice (adding this long comment), but I simply want y'all to know that I'm fully aware of why my html isn't valid. I'm duplicating ID's only because I don't have the time to sift through them all. Everything you see was coded BY HAND using Bootstrap.
+
+January and February "days" front-end functionality works (clicking the days reveals fake event info)... The rest of the months do NOT work properly because of the ID's. This fake app doesn't actually "work" because I'm not a "developer" persay. All data is fake and static. There's so much I need to learn.
+
+I burned a full day trying to quickly learn the Google Cal API, HandlebarsJS, Node, and Grunt... To no avail. I'm simply a front-end designer, but I would love the opportunity to learn how to make my designs actually WORK ;-) After a brief "freak-out", I calmed down and focused on what I do best... DESIGN and UX. This is what I have to offer... For now ;-)
+
+I also made the mistake of taking this challenge during the work week. Ouch. I've been working late hours doing my best to have something to show. Lesson learned lol.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Bootstrap 101 Template</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Al Kirby">
+		<meta name="description" content="A static calendar that just looks purdy and does nothing. Built with Bootstrap." />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
+		<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+		<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+		<link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+
+		<title>PurdyCal</title>
 
 		<!-- Bootstrap CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
-
+		<!-- App CSS -->
 		<link href="css/app.css" rel="stylesheet" type="text/css" media="screen" />
+		<!-- Google web font -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css" />
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -17,16 +36,13 @@
 		    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
 
 	<body>
 
 		<div class="container-fluid">
+
+<!-- ======================================== JANUARY -->
 			<div id="january">
 			    <div class="row text-center row-month">
 					January 2015
@@ -45,7 +61,6 @@
 							</h5>
 						</div><!-- /.panel-heading -->
 						
-						<!-- ================================================================================================================================= -->
 						<div id="collapseOne" class="panel-collapse collapse in">
 							<div class="panel-body">
 								
@@ -74,13 +89,13 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Design Responsive Calendar App" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Design Responsive Calendar App">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="-- : --" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="-- : --">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -102,7 +117,7 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Location" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Location">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -123,8 +138,8 @@
 												</div><!-- /.row -->
 												<div class="row">
 													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 												</div><!-- /.row -->
 											</div><!-- /.panel-body -->
 										</div><!-- /#collapseOne-one .panel-collapse .collapse -->
@@ -155,13 +170,13 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Design Responsive Calendar App" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Design Responsive Calendar App">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="-- : --" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="-- : --">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -183,7 +198,7 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Location" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Location">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -204,8 +219,8 @@
 												</div><!-- /.row -->
 												<div class="row">
 													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 												</div><!-- /.row -->
 											</div><!-- /.panel-body -->
 										</div><!-- /#collapseOne-two .panel-collapse .collapse -->
@@ -236,13 +251,13 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Design Responsive Calendar App" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Design Responsive Calendar App">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="-- : --" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="-- : --">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -264,7 +279,7 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Location" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Location">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -285,8 +300,8 @@
 												</div><!-- /.row -->
 												<div class="row">
 													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 												</div><!-- /.row -->
 											</div><!-- /.panel-body -->
 										</div><!-- /#collapseFour-one .panel-collapse .collapse -->
@@ -296,25 +311,7 @@
 							</div><!-- /.panel-body -->
 							
 						</div><!-- /#collapseOne .panel-collapse .collapse .in -->
-					</div><!-- /.panel .panel-default -->
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+					</div><!-- /.panel .panel-default -->		
 					
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -326,8 +323,6 @@
 								</a>
 							</h5>
 						</div><!-- /.panel-heading -->
-						
-						<!-- ================================================================================================================================= -->
 						<div id="collapseTwo" class="panel-collapse collapse">
 							<div class="panel-body">
 								<!-- ===================== -->
@@ -353,13 +348,13 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Continue working on Code Challenge" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Continue working on Code Challenge">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="8:00am" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="8:00am">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -381,7 +376,7 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Location" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Location">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -402,36 +397,17 @@
 												</div><!-- /.row -->
 												<div class="row">
 													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 												</div><!-- /.row -->
 											</div><!-- /.panel-body -->
 										</div><!-- /#collapseOne-one .panel-collapse .collapse -->
 										
 									</div><!-- /.panel .panel-default -->
 								</div><!-- /.panel-group #accordion2 -->
-								
-								
-								
-								
-							
 							</div><!-- /.panel-body -->
 						</div><!-- /#collapseTwo .panel-collapse .collapse -->
 					</div><!-- /.panel .panel-default -->
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -443,10 +419,9 @@
 								</a>
 							</h5>
 						</div><!-- /.panel-heading -->
-						<!-- ================================================================================================================================= -->
+
 						<div id="collapseThree" class="panel-collapse collapse">
 							<div class="panel-body">
-								<!-- ===================== -->
 								<div class="panel-group" id="accordion3-1">
 									<div class="panel panel-default">
 										<div class="panel-heading panel-heading-edit">
@@ -469,13 +444,13 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Sweat bullets and lose sleep" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Sweat bullets and lose sleep">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="-- : --" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="-- : --">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -497,7 +472,7 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Location" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Location">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -518,8 +493,8 @@
 												</div><!-- /.row -->
 												<div class="row">
 													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 												</div><!-- /.row -->
 											</div><!-- /.panel-body -->
 										</div><!-- /#collapseOne-one .panel-collapse .collapse -->
@@ -527,7 +502,6 @@
 									</div><!-- /.panel .panel-default -->
 								</div><!-- /.panel-group #accordion2 -->
 								
-								<!-- ===================== -->
 								<div class="panel-group" id="accordion3-2">
 									<div class="panel panel-default">
 										<div class="panel-heading panel-heading-edit">
@@ -550,13 +524,13 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Drink lots of beer and BBQ wild game" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Drink lots of beer and BBQ wild game">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="6:00pm" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="6:00pm">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -578,7 +552,7 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Location" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Location">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -599,8 +573,8 @@
 												</div><!-- /.row -->
 												<div class="row">
 													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 												</div><!-- /.row -->
 											</div><!-- /.panel-body -->
 										</div><!-- /#collapseOne-two .panel-collapse .collapse -->
@@ -612,9 +586,6 @@
 						</div><!-- /#collapseThree .panel-collapse .collapse -->
 					</div><!-- /.panel .panel-default -->
 
-
-
-
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h5 class="panel-title">
@@ -625,7 +596,6 @@
 								</a>
 							</h5>
 						</div><!-- /.panel-heading -->
-						<!-- ================================================================================================================================= -->
 						<div id="collapseFour" class="panel-collapse collapse">
 							<div class="panel-body">
 								<!-- ===================== -->
@@ -648,13 +618,13 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Event title" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Event title">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="-- : --" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="-- : --">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -676,7 +646,7 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Location" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Location">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -697,8 +667,8 @@
 												</div><!-- /.row -->
 												<div class="row">
 													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 												</div><!-- /.row -->
 											</div><!-- /.panel-body -->
 										</div><!-- /#collapseOne-one .panel-collapse .collapse -->
@@ -708,10 +678,6 @@
 							</div><!-- /.panel-body -->
 						</div><!-- /#collapseFour .panel-collapse .collapse -->
 					</div><!-- /.panel .panel-default -->
-
-
-
-
 
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -723,7 +689,7 @@
 								</a>
 							</h5>
 						</div><!-- /.panel-heading -->
-						<!-- ================================================================================================================================= -->
+
 						<div id="collapseFive" class="panel-collapse collapse">
 							<div class="panel-body">
 								<!-- ===================== -->
@@ -746,13 +712,13 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Event title" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Event title">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="-- : --" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="-- : --">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -774,7 +740,7 @@
 												<div class="row">
 													<div class="input-group">
 														<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></span>
-														<input type="text" class="form-control" placeholder="Location" aria-describedby="inputGroupSuccess4Status">
+														<input type="text" class="form-control" placeholder="Location">
 													</div><!-- /.input-group -->
 												</div><!-- /.row -->
 												<div class="row">
@@ -795,8 +761,8 @@
 												</div><!-- /.row -->
 												<div class="row">
 													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
-													<button type="submit" class="btn btn-default pull-right" style="margin-right: 5px;"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span></button>
+													<button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 												</div><!-- /.row -->
 											</div><!-- /.panel-body -->
 										</div><!-- /#collapseOne-one .panel-collapse .collapse -->
@@ -809,43 +775,43 @@
 
 				</div><!-- /#accordion -->
 
-	<!-- First ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#jan26" aria-expanded="true" aria-controls="jan26">
+						<a class="btn-date" data-toggle="collapse" href="#jan26" aria-expanded="true" aria-controls="jan26">
 			  				<span class="day-date"><small>Mon</small><br />
 							26</span>
 							<span class="badge">3</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#jan27" aria-expanded="true" aria-controls="jan27">
+						<a class="btn-date" data-toggle="collapse" href="#jan27" aria-expanded="true" aria-controls="jan27">
 			  				<span class="day-date"><small>Tue</small><br />
 							27</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li class="no-event">
-						<a class="btn-date" type="button" data-toggle="collapse" href="#jan28" aria-expanded="true" aria-controls="jan28">
+						<a class="btn-date" data-toggle="collapse" href="#jan28" aria-expanded="true" aria-controls="jan28">
 			  				<span class="day-date"><small>Wed</small><br />
 							28</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#jan29" aria-expanded="true" aria-controls="jan29">
+						<a class="btn-date" data-toggle="collapse" href="#jan29" aria-expanded="true" aria-controls="jan29">
 			  				<span class="day-date"><small>Thu</small><br />
 							29</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#jan30" aria-expanded="true" aria-controls="jan30">
+						<a class="btn-date" data-toggle="collapse" href="#jan30" aria-expanded="true" aria-controls="jan30">
 			  				<span class="day-date"><small>Fri</small><br />
 							30</span>
 							<span class="badge">2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#jan31" aria-expanded="true" aria-controls="jan31">
+						<a class="btn-date" data-toggle="collapse" href="#jan31" aria-expanded="true" aria-controls="jan31">
 			  				<span class="day-date"><small>Sat</small><br />
 							31</span>
 							<span class="badge">1</span>
@@ -972,14 +938,13 @@
 
 			</div><!-- /#january -->
 
+<!-- ======================================== FEBRUARY -->
 			<div id="february">
-<!-- Month row -->
 				<div class="row text-center row-month">
 					February 2015
 				</div>
-
 			
-<!-- Second ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
 						<span class="btn-date btn-date-null">
@@ -1018,7 +983,7 @@
 						</span>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb1" aria-expanded="true" aria-controls="feb1">
+						<a class="btn-date" data-toggle="collapse" href="#feb1" aria-expanded="true" aria-controls="feb1">
 			  				<span class="day-date"><small>Sun</small><br />
 							1</span>
 						</a>
@@ -1036,53 +1001,50 @@
 					</div><!-- /.row .event-sm -->
 				</div><!-- /.collapse -->
 
-
-
-
-	<!-- Third ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb2" aria-expanded="true" aria-controls="feb2">
+						<a class="btn-date" data-toggle="collapse" href="#feb2" aria-expanded="true" aria-controls="feb2">
 			  				<span class="day-date"><small>Mon</small><br />
 							2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb3" aria-expanded="true" aria-controls="feb3">
+						<a class="btn-date" data-toggle="collapse" href="#feb3" aria-expanded="true" aria-controls="feb3">
 			  				<span class="day-date"><small>Tue</small><br />
 							3</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li class="no-event">
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb4" aria-expanded="true" aria-controls="feb4">
+						<a class="btn-date" data-toggle="collapse" href="#feb4" aria-expanded="true" aria-controls="feb4">
 			  				<span class="day-date"><small>Wed</small><br />
 							4</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb5" aria-expanded="true" aria-controls="feb5">
+						<a class="btn-date" data-toggle="collapse" href="#feb5" aria-expanded="true" aria-controls="feb5">
 			  				<span class="day-date"><small>Thu</small><br />
 							5</span>
 							<span class="badge">3</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb6" aria-expanded="true" aria-controls="feb6">
+						<a class="btn-date" data-toggle="collapse" href="#feb6" aria-expanded="true" aria-controls="feb6">
 			  				<span class="day-date"><small>Fri</small><br />
 							6</span>
 							<span class="badge">2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb7" aria-expanded="true" aria-controls="feb7">
+						<a class="btn-date" data-toggle="collapse" href="#feb7" aria-expanded="true" aria-controls="feb7">
 			  				<span class="day-date"><small>Sat</small><br />
 							7</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb8" aria-expanded="true" aria-controls="feb8">
+						<a class="btn-date" data-toggle="collapse" href="#feb8" aria-expanded="true" aria-controls="feb8">
 			  				<span class="day-date"><small>Sun</small><br />
 							8</span>
 						</a>
@@ -1205,52 +1167,50 @@
 					</div><!-- /.row .event-sm -->
 				</div><!-- /.collapse -->
 
-
-
-	<!-- Fourth ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb9" aria-expanded="true" aria-controls="feb9">
+						<a class="btn-date" data-toggle="collapse" href="#feb9" aria-expanded="true" aria-controls="feb9">
 			  				<span class="day-date"><small>Mon</small><br />
 							9</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb10" aria-expanded="true" aria-controls="feb10">
+						<a class="btn-date" data-toggle="collapse" href="#feb10" aria-expanded="true" aria-controls="feb10">
 			  				<span class="day-date"><small>Tue</small><br />
 							10</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li class="no-event">
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb11" aria-expanded="true" aria-controls="feb11">
+						<a class="btn-date" data-toggle="collapse" href="#feb11" aria-expanded="true" aria-controls="feb11">
 			  				<span class="day-date"><small>Wed</small><br />
 							11</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb12" aria-expanded="true" aria-controls="feb12">
+						<a class="btn-date" data-toggle="collapse" href="#feb12" aria-expanded="true" aria-controls="feb12">
 			  				<span class="day-date"><small>Thu</small><br />
 							12</span>
 							<span class="badge">3</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb13" aria-expanded="true" aria-controls="feb13">
+						<a class="btn-date" data-toggle="collapse" href="#feb13" aria-expanded="true" aria-controls="feb13">
 			  				<span class="day-date"><small>Fri</small><br />
 							13</span>
 							<span class="badge">2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb14" aria-expanded="true" aria-controls="feb14">
+						<a class="btn-date" data-toggle="collapse" href="#feb14" aria-expanded="true" aria-controls="feb14">
 			  				<span class="day-date"><small>Sat</small><br />
 							14</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb15" aria-expanded="true" aria-controls="feb15">
+						<a class="btn-date" data-toggle="collapse" href="#feb15" aria-expanded="true" aria-controls="feb15">
 			  				<span class="day-date"><small>Sun</small><br />
 							15</span>
 						</a>
@@ -1372,53 +1332,51 @@
 						</div>
 					</div><!-- /.row .event-sm -->
 				</div><!-- /.collapse -->
-
-
 					
-	<!-- Fifth ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb16" aria-expanded="true" aria-controls="feb16">
+						<a class="btn-date" data-toggle="collapse" href="#feb16" aria-expanded="true" aria-controls="feb16">
 			  				<span class="day-date"><small>Mon</small><br />
 							16</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb17" aria-expanded="true" aria-controls="feb17">
+						<a class="btn-date" data-toggle="collapse" href="#feb17" aria-expanded="true" aria-controls="feb17">
 			  				<span class="day-date"><small>Tue</small><br />
 							17</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li class="no-event">
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb18" aria-expanded="true" aria-controls="feb18">
+						<a class="btn-date" data-toggle="collapse" href="#feb18" aria-expanded="true" aria-controls="feb18">
 			  				<span class="day-date"><small>Wed</small><br />
 							18</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb19" aria-expanded="true" aria-controls="feb19">
+						<a class="btn-date" data-toggle="collapse" href="#feb19" aria-expanded="true" aria-controls="feb19">
 			  				<span class="day-date"><small>Thu</small><br />
 							19</span>
 							<span class="badge">3</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb20" aria-expanded="true" aria-controls="feb20">
+						<a class="btn-date" data-toggle="collapse" href="#feb20" aria-expanded="true" aria-controls="feb20">
 			  				<span class="day-date"><small>Fri</small><br />
 							20</span>
 							<span class="badge">2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb21" aria-expanded="true" aria-controls="feb21">
+						<a class="btn-date" data-toggle="collapse" href="#feb21" aria-expanded="true" aria-controls="feb21">
 			  				<span class="day-date"><small>Sat</small><br />
 							21</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb22" aria-expanded="true" aria-controls="feb22">
+						<a class="btn-date" data-toggle="collapse" href="#feb22" aria-expanded="true" aria-controls="feb22">
 			  				<span class="day-date"><small>Sun</small><br />
 							22</span>
 						</a>
@@ -1540,46 +1498,44 @@
 						</div>
 					</div><!-- /.row .event-sm -->
 				</div><!-- /.collapse -->
-		
 
-
-	<!-- Sixth ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb23" aria-expanded="true" aria-controls="feb23">
+						<a class="btn-date" data-toggle="collapse" href="#feb23" aria-expanded="true" aria-controls="feb23">
 			  				<span class="day-date"><small>Mon</small><br />
 							23</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb24" aria-expanded="true" aria-controls="feb24">
+						<a class="btn-date" data-toggle="collapse" href="#feb24" aria-expanded="true" aria-controls="feb24">
 			  				<span class="day-date"><small>Tue</small><br />
 							24</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li class="no-event">
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb25" aria-expanded="true" aria-controls="feb25">
+						<a class="btn-date" data-toggle="collapse" href="#feb25" aria-expanded="true" aria-controls="feb25">
 			  				<span class="day-date"><small>Wed</small><br />
 							25</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb26" aria-expanded="true" aria-controls="feb26">
+						<a class="btn-date" data-toggle="collapse" href="#feb26" aria-expanded="true" aria-controls="feb26">
 			  				<span class="day-date"><small>Thu</small><br />
 							26</span>
 							<span class="badge">3</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb27" aria-expanded="true" aria-controls="feb27">
+						<a class="btn-date" data-toggle="collapse" href="#feb27" aria-expanded="true" aria-controls="feb27">
 			  				<span class="day-date"><small>Fri</small><br />
 							27</span>
 							<span class="badge">2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb28" aria-expanded="true" aria-controls="feb28">
+						<a class="btn-date" data-toggle="collapse" href="#feb28" aria-expanded="true" aria-controls="feb28">
 			  				<span class="day-date"><small>Sat</small><br />
 							28</span>
 							<span class="badge">1</span>
@@ -1701,15 +1657,13 @@
 				
 			</div><!-- /#february -->
 
-
+<!-- ======================================== MARCH -->
 			<div id="march">
-<!-- Month row -->
 				<div class="row text-center row-month">
 					March 2015
 				</div>
-
 			
-<!-- Second ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
 						<span class="btn-date btn-date-null">
@@ -1748,7 +1702,7 @@
 						</span>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb1" aria-expanded="true" aria-controls="feb1">
+						<a class="btn-date" data-toggle="collapse" href="#feb1" aria-expanded="true" aria-controls="feb1">
 			  				<span class="day-date"><small>Sun</small><br />
 							1</span>
 						</a>
@@ -1766,53 +1720,50 @@
 					</div><!-- /.row .event-sm -->
 				</div><!-- /.collapse -->
 
-
-
-
-	<!-- Third ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb2" aria-expanded="true" aria-controls="feb2">
+						<a class="btn-date" data-toggle="collapse" href="#feb2" aria-expanded="true" aria-controls="feb2">
 			  				<span class="day-date"><small>Mon</small><br />
 							2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb3" aria-expanded="true" aria-controls="feb3">
+						<a class="btn-date" data-toggle="collapse" href="#feb3" aria-expanded="true" aria-controls="feb3">
 			  				<span class="day-date"><small>Tue</small><br />
 							3</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li class="no-event">
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb4" aria-expanded="true" aria-controls="feb4">
+						<a class="btn-date" data-toggle="collapse" href="#feb4" aria-expanded="true" aria-controls="feb4">
 			  				<span class="day-date"><small>Wed</small><br />
 							4</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb5" aria-expanded="true" aria-controls="feb5">
+						<a class="btn-date" data-toggle="collapse" href="#feb5" aria-expanded="true" aria-controls="feb5">
 			  				<span class="day-date"><small>Thu</small><br />
 							5</span>
 							<span class="badge">3</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb6" aria-expanded="true" aria-controls="feb6">
+						<a class="btn-date" data-toggle="collapse" href="#feb6" aria-expanded="true" aria-controls="feb6">
 			  				<span class="day-date"><small>Fri</small><br />
 							6</span>
 							<span class="badge">2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb7" aria-expanded="true" aria-controls="feb7">
+						<a class="btn-date" data-toggle="collapse" href="#feb7" aria-expanded="true" aria-controls="feb7">
 			  				<span class="day-date"><small>Sat</small><br />
 							7</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb8" aria-expanded="true" aria-controls="feb8">
+						<a class="btn-date" data-toggle="collapse" href="#feb8" aria-expanded="true" aria-controls="feb8">
 			  				<span class="day-date"><small>Sun</small><br />
 							8</span>
 						</a>
@@ -1935,52 +1886,50 @@
 					</div><!-- /.row .event-sm -->
 				</div><!-- /.collapse -->
 
-
-
-	<!-- Fourth ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb9" aria-expanded="true" aria-controls="feb9">
+						<a class="btn-date" data-toggle="collapse" href="#feb9" aria-expanded="true" aria-controls="feb9">
 			  				<span class="day-date"><small>Mon</small><br />
 							9</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb10" aria-expanded="true" aria-controls="feb10">
+						<a class="btn-date" data-toggle="collapse" href="#feb10" aria-expanded="true" aria-controls="feb10">
 			  				<span class="day-date"><small>Tue</small><br />
 							10</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li class="no-event">
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb11" aria-expanded="true" aria-controls="feb11">
+						<a class="btn-date" data-toggle="collapse" href="#feb11" aria-expanded="true" aria-controls="feb11">
 			  				<span class="day-date"><small>Wed</small><br />
 							11</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb12" aria-expanded="true" aria-controls="feb12">
+						<a class="btn-date" data-toggle="collapse" href="#feb12" aria-expanded="true" aria-controls="feb12">
 			  				<span class="day-date"><small>Thu</small><br />
 							12</span>
 							<span class="badge">3</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb13" aria-expanded="true" aria-controls="feb13">
+						<a class="btn-date" data-toggle="collapse" href="#feb13" aria-expanded="true" aria-controls="feb13">
 			  				<span class="day-date"><small>Fri</small><br />
 							13</span>
 							<span class="badge">2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb14" aria-expanded="true" aria-controls="feb14">
+						<a class="btn-date" data-toggle="collapse" href="#feb14" aria-expanded="true" aria-controls="feb14">
 			  				<span class="day-date"><small>Sat</small><br />
 							14</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb15" aria-expanded="true" aria-controls="feb15">
+						<a class="btn-date" data-toggle="collapse" href="#feb15" aria-expanded="true" aria-controls="feb15">
 			  				<span class="day-date"><small>Sun</small><br />
 							15</span>
 						</a>
@@ -2102,53 +2051,51 @@
 						</div>
 					</div><!-- /.row .event-sm -->
 				</div><!-- /.collapse -->
-
-
 					
-	<!-- Fifth ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb16" aria-expanded="true" aria-controls="feb16">
+						<a class="btn-date" data-toggle="collapse" href="#feb16" aria-expanded="true" aria-controls="feb16">
 			  				<span class="day-date"><small>Mon</small><br />
 							16</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb17" aria-expanded="true" aria-controls="feb17">
+						<a class="btn-date" data-toggle="collapse" href="#feb17" aria-expanded="true" aria-controls="feb17">
 			  				<span class="day-date"><small>Tue</small><br />
 							17</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li class="no-event">
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb18" aria-expanded="true" aria-controls="feb18">
+						<a class="btn-date" data-toggle="collapse" href="#feb18" aria-expanded="true" aria-controls="feb18">
 			  				<span class="day-date"><small>Wed</small><br />
 							18</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb19" aria-expanded="true" aria-controls="feb19">
+						<a class="btn-date" data-toggle="collapse" href="#feb19" aria-expanded="true" aria-controls="feb19">
 			  				<span class="day-date"><small>Thu</small><br />
 							19</span>
 							<span class="badge">3</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb20" aria-expanded="true" aria-controls="feb20">
+						<a class="btn-date" data-toggle="collapse" href="#feb20" aria-expanded="true" aria-controls="feb20">
 			  				<span class="day-date"><small>Fri</small><br />
 							20</span>
 							<span class="badge">2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb21" aria-expanded="true" aria-controls="feb21">
+						<a class="btn-date" data-toggle="collapse" href="#feb21" aria-expanded="true" aria-controls="feb21">
 			  				<span class="day-date"><small>Sat</small><br />
 							21</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb22" aria-expanded="true" aria-controls="feb22">
+						<a class="btn-date" data-toggle="collapse" href="#feb22" aria-expanded="true" aria-controls="feb22">
 			  				<span class="day-date"><small>Sun</small><br />
 							22</span>
 						</a>
@@ -2270,46 +2217,44 @@
 						</div>
 					</div><!-- /.row .event-sm -->
 				</div><!-- /.collapse -->
-		
 
-
-	<!-- Sixth ROW of additional dates -->
+	<!-- ROW of additional dates -->
 				<ul class="list-unstyled list-inline additional-dates">
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb23" aria-expanded="true" aria-controls="feb23">
+						<a class="btn-date" data-toggle="collapse" href="#feb23" aria-expanded="true" aria-controls="feb23">
 			  				<span class="day-date"><small>Mon</small><br />
 							23</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb24" aria-expanded="true" aria-controls="feb24">
+						<a class="btn-date" data-toggle="collapse" href="#feb24" aria-expanded="true" aria-controls="feb24">
 			  				<span class="day-date"><small>Tue</small><br />
 							24</span>
 							<span class="badge">1</span>
 						</a>
 					</li>
 					<li class="no-event">
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb25" aria-expanded="true" aria-controls="feb25">
+						<a class="btn-date" data-toggle="collapse" href="#feb25" aria-expanded="true" aria-controls="feb25">
 			  				<span class="day-date"><small>Wed</small><br />
 							25</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb26" aria-expanded="true" aria-controls="feb26">
+						<a class="btn-date" data-toggle="collapse" href="#feb26" aria-expanded="true" aria-controls="feb26">
 			  				<span class="day-date"><small>Thu</small><br />
 							26</span>
 							<span class="badge">3</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb27" aria-expanded="true" aria-controls="feb27">
+						<a class="btn-date" data-toggle="collapse" href="#feb27" aria-expanded="true" aria-controls="feb27">
 			  				<span class="day-date"><small>Fri</small><br />
 							27</span>
 							<span class="badge">2</span>
 						</a>
 					</li>
 					<li>
-						<a class="btn-date" type="button" data-toggle="collapse" href="#feb28" aria-expanded="true" aria-controls="feb28">
+						<a class="btn-date" data-toggle="collapse" href="#feb28" aria-expanded="true" aria-controls="feb28">
 			  				<span class="day-date"><small>Sat</small><br />
 							28</span>
 							<span class="badge">1</span>
@@ -2439,8 +2384,3655 @@
 					</div><!-- /.row .event-sm -->
 				</div><!-- /.collapse -->
 			</div><!-- /#march -->
+
+<!-- ======================================== APRIL -->
+			<div id="april">
+				<div class="row text-center row-month">
+					April 2015
+				</div>
+		
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Mon</small><br />
+							23</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Tue</small><br />
+							24</span>
+						</span>
+					</li>
+					<li class="no-event">
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Wed</small><br />
+							25</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Thu</small><br />
+							26</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Fri</small><br />
+							27</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Sat</small><br />
+							28</span>
+						</span>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb1" aria-expanded="true" aria-controls="feb1">
+			  				<span class="day-date"><small>Sun</small><br />
+							1</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb1">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							1<sup>st</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb2" aria-expanded="true" aria-controls="feb2">
+			  				<span class="day-date"><small>Mon</small><br />
+							2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb3" aria-expanded="true" aria-controls="feb3">
+			  				<span class="day-date"><small>Tue</small><br />
+							3</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb4" aria-expanded="true" aria-controls="feb4">
+			  				<span class="day-date"><small>Wed</small><br />
+							4</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb5" aria-expanded="true" aria-controls="feb5">
+			  				<span class="day-date"><small>Thu</small><br />
+							5</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb6" aria-expanded="true" aria-controls="feb6">
+			  				<span class="day-date"><small>Fri</small><br />
+							6</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb7" aria-expanded="true" aria-controls="feb7">
+			  				<span class="day-date"><small>Sat</small><br />
+							7</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb8" aria-expanded="true" aria-controls="feb8">
+			  				<span class="day-date"><small>Sun</small><br />
+							8</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb2">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							2<sup>nd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb3">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							3<sup>rd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb4">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							4<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb5">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb6">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							6<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							6<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb7">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							7<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb8">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							8<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb9" aria-expanded="true" aria-controls="feb9">
+			  				<span class="day-date"><small>Mon</small><br />
+							9</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb10" aria-expanded="true" aria-controls="feb10">
+			  				<span class="day-date"><small>Tue</small><br />
+							10</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb11" aria-expanded="true" aria-controls="feb11">
+			  				<span class="day-date"><small>Wed</small><br />
+							11</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb12" aria-expanded="true" aria-controls="feb12">
+			  				<span class="day-date"><small>Thu</small><br />
+							12</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb13" aria-expanded="true" aria-controls="feb13">
+			  				<span class="day-date"><small>Fri</small><br />
+							13</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb14" aria-expanded="true" aria-controls="feb14">
+			  				<span class="day-date"><small>Sat</small><br />
+							14</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb15" aria-expanded="true" aria-controls="feb15">
+			  				<span class="day-date"><small>Sun</small><br />
+							15</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb9">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							9<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb10">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							10<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb11">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							11<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb12">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb13">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							13<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							13<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb14">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							14<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb15">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							15<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+					
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb16" aria-expanded="true" aria-controls="feb16">
+			  				<span class="day-date"><small>Mon</small><br />
+							16</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb17" aria-expanded="true" aria-controls="feb17">
+			  				<span class="day-date"><small>Tue</small><br />
+							17</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb18" aria-expanded="true" aria-controls="feb18">
+			  				<span class="day-date"><small>Wed</small><br />
+							18</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb19" aria-expanded="true" aria-controls="feb19">
+			  				<span class="day-date"><small>Thu</small><br />
+							19</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb20" aria-expanded="true" aria-controls="feb20">
+			  				<span class="day-date"><small>Fri</small><br />
+							20</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb21" aria-expanded="true" aria-controls="feb21">
+			  				<span class="day-date"><small>Sat</small><br />
+							21</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb22" aria-expanded="true" aria-controls="feb22">
+			  				<span class="day-date"><small>Sun</small><br />
+							22</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb16">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							16<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb17">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							17<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb18">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							18<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb19">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb20">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							20<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							20<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb21">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							21<sup>st</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb22">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							22<sup>nd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb23" aria-expanded="true" aria-controls="feb23">
+			  				<span class="day-date"><small>Mon</small><br />
+							23</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb24" aria-expanded="true" aria-controls="feb24">
+			  				<span class="day-date"><small>Tue</small><br />
+							24</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb25" aria-expanded="true" aria-controls="feb25">
+			  				<span class="day-date"><small>Wed</small><br />
+							25</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb26" aria-expanded="true" aria-controls="feb26">
+			  				<span class="day-date"><small>Thu</small><br />
+							26</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb27" aria-expanded="true" aria-controls="feb27">
+			  				<span class="day-date"><small>Fri</small><br />
+							27</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb28" aria-expanded="true" aria-controls="feb28">
+			  				<span class="day-date"><small>Sat</small><br />
+							28</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Sun</small><br />
+							1</span>
+						</span>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb23">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							23<sup>rd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb24">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							24<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb25">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							25<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb26">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb27">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							27<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							27<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb28">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							28<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb29">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							29<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+			</div><!-- /#April -->
+
+<!-- ======================================== MAY -->
+			<div id="may">
+				<div class="row text-center row-month">
+					May 2015
+				</div>
+			
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Mon</small><br />
+							23</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Tue</small><br />
+							24</span>
+						</span>
+					</li>
+					<li class="no-event">
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Wed</small><br />
+							25</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Thu</small><br />
+							26</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Fri</small><br />
+							27</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Sat</small><br />
+							28</span>
+						</span>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb1" aria-expanded="true" aria-controls="feb1">
+			  				<span class="day-date"><small>Sun</small><br />
+							1</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb1">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							1<sup>st</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb2" aria-expanded="true" aria-controls="feb2">
+			  				<span class="day-date"><small>Mon</small><br />
+							2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb3" aria-expanded="true" aria-controls="feb3">
+			  				<span class="day-date"><small>Tue</small><br />
+							3</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb4" aria-expanded="true" aria-controls="feb4">
+			  				<span class="day-date"><small>Wed</small><br />
+							4</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb5" aria-expanded="true" aria-controls="feb5">
+			  				<span class="day-date"><small>Thu</small><br />
+							5</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb6" aria-expanded="true" aria-controls="feb6">
+			  				<span class="day-date"><small>Fri</small><br />
+							6</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb7" aria-expanded="true" aria-controls="feb7">
+			  				<span class="day-date"><small>Sat</small><br />
+							7</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb8" aria-expanded="true" aria-controls="feb8">
+			  				<span class="day-date"><small>Sun</small><br />
+							8</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb2">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							2<sup>nd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb3">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							3<sup>rd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb4">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							4<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb5">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb6">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							6<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							6<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb7">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							7<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb8">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							8<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb9" aria-expanded="true" aria-controls="feb9">
+			  				<span class="day-date"><small>Mon</small><br />
+							9</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb10" aria-expanded="true" aria-controls="feb10">
+			  				<span class="day-date"><small>Tue</small><br />
+							10</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb11" aria-expanded="true" aria-controls="feb11">
+			  				<span class="day-date"><small>Wed</small><br />
+							11</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb12" aria-expanded="true" aria-controls="feb12">
+			  				<span class="day-date"><small>Thu</small><br />
+							12</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb13" aria-expanded="true" aria-controls="feb13">
+			  				<span class="day-date"><small>Fri</small><br />
+							13</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb14" aria-expanded="true" aria-controls="feb14">
+			  				<span class="day-date"><small>Sat</small><br />
+							14</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb15" aria-expanded="true" aria-controls="feb15">
+			  				<span class="day-date"><small>Sun</small><br />
+							15</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb9">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							9<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb10">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							10<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb11">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							11<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb12">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb13">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							13<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							13<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb14">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							14<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb15">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							15<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+			
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb16" aria-expanded="true" aria-controls="feb16">
+			  				<span class="day-date"><small>Mon</small><br />
+							16</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb17" aria-expanded="true" aria-controls="feb17">
+			  				<span class="day-date"><small>Tue</small><br />
+							17</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb18" aria-expanded="true" aria-controls="feb18">
+			  				<span class="day-date"><small>Wed</small><br />
+							18</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb19" aria-expanded="true" aria-controls="feb19">
+			  				<span class="day-date"><small>Thu</small><br />
+							19</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb20" aria-expanded="true" aria-controls="feb20">
+			  				<span class="day-date"><small>Fri</small><br />
+							20</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb21" aria-expanded="true" aria-controls="feb21">
+			  				<span class="day-date"><small>Sat</small><br />
+							21</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb22" aria-expanded="true" aria-controls="feb22">
+			  				<span class="day-date"><small>Sun</small><br />
+							22</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb16">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							16<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb17">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							17<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb18">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							18<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb19">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb20">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							20<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							20<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb21">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							21<sup>st</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb22">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							22<sup>nd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb23" aria-expanded="true" aria-controls="feb23">
+			  				<span class="day-date"><small>Mon</small><br />
+							23</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb24" aria-expanded="true" aria-controls="feb24">
+			  				<span class="day-date"><small>Tue</small><br />
+							24</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb25" aria-expanded="true" aria-controls="feb25">
+			  				<span class="day-date"><small>Wed</small><br />
+							25</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb26" aria-expanded="true" aria-controls="feb26">
+			  				<span class="day-date"><small>Thu</small><br />
+							26</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb27" aria-expanded="true" aria-controls="feb27">
+			  				<span class="day-date"><small>Fri</small><br />
+							27</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb28" aria-expanded="true" aria-controls="feb28">
+			  				<span class="day-date"><small>Sat</small><br />
+							28</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Sun</small><br />
+							1</span>
+						</span>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb23">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							23<sup>rd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb24">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							24<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb25">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							25<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb26">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb27">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							27<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							27<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb28">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							28<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb29">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							29<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+			</div><!-- /#may -->
+
+<!-- ======================================== JUNE -->
+			<div id="june">
+				<div class="row text-center row-month">
+					June 2015
+				</div>
+			
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Mon</small><br />
+							23</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Tue</small><br />
+							24</span>
+						</span>
+					</li>
+					<li class="no-event">
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Wed</small><br />
+							25</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Thu</small><br />
+							26</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Fri</small><br />
+							27</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Sat</small><br />
+							28</span>
+						</span>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb1" aria-expanded="true" aria-controls="feb1">
+			  				<span class="day-date"><small>Sun</small><br />
+							1</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb1">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							1<sup>st</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb2" aria-expanded="true" aria-controls="feb2">
+			  				<span class="day-date"><small>Mon</small><br />
+							2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb3" aria-expanded="true" aria-controls="feb3">
+			  				<span class="day-date"><small>Tue</small><br />
+							3</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb4" aria-expanded="true" aria-controls="feb4">
+			  				<span class="day-date"><small>Wed</small><br />
+							4</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb5" aria-expanded="true" aria-controls="feb5">
+			  				<span class="day-date"><small>Thu</small><br />
+							5</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb6" aria-expanded="true" aria-controls="feb6">
+			  				<span class="day-date"><small>Fri</small><br />
+							6</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb7" aria-expanded="true" aria-controls="feb7">
+			  				<span class="day-date"><small>Sat</small><br />
+							7</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb8" aria-expanded="true" aria-controls="feb8">
+			  				<span class="day-date"><small>Sun</small><br />
+							8</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb2">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							2<sup>nd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb3">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							3<sup>rd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb4">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							4<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb5">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb6">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							6<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							6<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb7">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							7<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb8">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							8<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb9" aria-expanded="true" aria-controls="feb9">
+			  				<span class="day-date"><small>Mon</small><br />
+							9</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb10" aria-expanded="true" aria-controls="feb10">
+			  				<span class="day-date"><small>Tue</small><br />
+							10</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb11" aria-expanded="true" aria-controls="feb11">
+			  				<span class="day-date"><small>Wed</small><br />
+							11</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb12" aria-expanded="true" aria-controls="feb12">
+			  				<span class="day-date"><small>Thu</small><br />
+							12</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb13" aria-expanded="true" aria-controls="feb13">
+			  				<span class="day-date"><small>Fri</small><br />
+							13</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb14" aria-expanded="true" aria-controls="feb14">
+			  				<span class="day-date"><small>Sat</small><br />
+							14</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb15" aria-expanded="true" aria-controls="feb15">
+			  				<span class="day-date"><small>Sun</small><br />
+							15</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb9">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							9<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb10">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							10<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb11">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							11<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb12">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb13">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							13<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							13<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb14">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							14<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb15">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							15<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+					
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb16" aria-expanded="true" aria-controls="feb16">
+			  				<span class="day-date"><small>Mon</small><br />
+							16</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb17" aria-expanded="true" aria-controls="feb17">
+			  				<span class="day-date"><small>Tue</small><br />
+							17</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb18" aria-expanded="true" aria-controls="feb18">
+			  				<span class="day-date"><small>Wed</small><br />
+							18</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb19" aria-expanded="true" aria-controls="feb19">
+			  				<span class="day-date"><small>Thu</small><br />
+							19</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb20" aria-expanded="true" aria-controls="feb20">
+			  				<span class="day-date"><small>Fri</small><br />
+							20</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb21" aria-expanded="true" aria-controls="feb21">
+			  				<span class="day-date"><small>Sat</small><br />
+							21</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb22" aria-expanded="true" aria-controls="feb22">
+			  				<span class="day-date"><small>Sun</small><br />
+							22</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb16">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							16<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb17">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							17<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb18">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							18<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb19">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb20">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							20<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							20<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb21">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							21<sup>st</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb22">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							22<sup>nd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb23" aria-expanded="true" aria-controls="feb23">
+			  				<span class="day-date"><small>Mon</small><br />
+							23</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb24" aria-expanded="true" aria-controls="feb24">
+			  				<span class="day-date"><small>Tue</small><br />
+							24</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb25" aria-expanded="true" aria-controls="feb25">
+			  				<span class="day-date"><small>Wed</small><br />
+							25</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb26" aria-expanded="true" aria-controls="feb26">
+			  				<span class="day-date"><small>Thu</small><br />
+							26</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb27" aria-expanded="true" aria-controls="feb27">
+			  				<span class="day-date"><small>Fri</small><br />
+							27</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb28" aria-expanded="true" aria-controls="feb28">
+			  				<span class="day-date"><small>Sat</small><br />
+							28</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Sun</small><br />
+							1</span>
+						</span>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb23">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							23<sup>rd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb24">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							24<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb25">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							25<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb26">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb27">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							27<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							27<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb28">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							28<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb29">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							29<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+			</div><!-- /#june -->
+
+<!-- ======================================== JULY -->
+			<div id="july">
+				<div class="row text-center row-month">
+					July 2015
+				</div>
+			
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Mon</small><br />
+							23</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Tue</small><br />
+							24</span>
+						</span>
+					</li>
+					<li class="no-event">
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Wed</small><br />
+							25</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Thu</small><br />
+							26</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Fri</small><br />
+							27</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Sat</small><br />
+							28</span>
+						</span>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb1" aria-expanded="true" aria-controls="feb1">
+			  				<span class="day-date"><small>Sun</small><br />
+							1</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb1">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							1<sup>st</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb2" aria-expanded="true" aria-controls="feb2">
+			  				<span class="day-date"><small>Mon</small><br />
+							2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb3" aria-expanded="true" aria-controls="feb3">
+			  				<span class="day-date"><small>Tue</small><br />
+							3</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb4" aria-expanded="true" aria-controls="feb4">
+			  				<span class="day-date"><small>Wed</small><br />
+							4</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb5" aria-expanded="true" aria-controls="feb5">
+			  				<span class="day-date"><small>Thu</small><br />
+							5</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb6" aria-expanded="true" aria-controls="feb6">
+			  				<span class="day-date"><small>Fri</small><br />
+							6</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb7" aria-expanded="true" aria-controls="feb7">
+			  				<span class="day-date"><small>Sat</small><br />
+							7</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb8" aria-expanded="true" aria-controls="feb8">
+			  				<span class="day-date"><small>Sun</small><br />
+							8</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb2">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							2<sup>nd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb3">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							3<sup>rd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb4">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							4<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb5">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb6">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							6<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							6<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb7">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							7<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb8">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							8<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb9" aria-expanded="true" aria-controls="feb9">
+			  				<span class="day-date"><small>Mon</small><br />
+							9</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb10" aria-expanded="true" aria-controls="feb10">
+			  				<span class="day-date"><small>Tue</small><br />
+							10</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb11" aria-expanded="true" aria-controls="feb11">
+			  				<span class="day-date"><small>Wed</small><br />
+							11</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb12" aria-expanded="true" aria-controls="feb12">
+			  				<span class="day-date"><small>Thu</small><br />
+							12</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb13" aria-expanded="true" aria-controls="feb13">
+			  				<span class="day-date"><small>Fri</small><br />
+							13</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb14" aria-expanded="true" aria-controls="feb14">
+			  				<span class="day-date"><small>Sat</small><br />
+							14</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb15" aria-expanded="true" aria-controls="feb15">
+			  				<span class="day-date"><small>Sun</small><br />
+							15</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb9">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							9<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb10">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							10<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb11">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							11<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb12">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb13">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							13<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							13<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb14">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							14<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb15">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							15<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+					
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb16" aria-expanded="true" aria-controls="feb16">
+			  				<span class="day-date"><small>Mon</small><br />
+							16</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb17" aria-expanded="true" aria-controls="feb17">
+			  				<span class="day-date"><small>Tue</small><br />
+							17</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb18" aria-expanded="true" aria-controls="feb18">
+			  				<span class="day-date"><small>Wed</small><br />
+							18</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb19" aria-expanded="true" aria-controls="feb19">
+			  				<span class="day-date"><small>Thu</small><br />
+							19</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb20" aria-expanded="true" aria-controls="feb20">
+			  				<span class="day-date"><small>Fri</small><br />
+							20</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb21" aria-expanded="true" aria-controls="feb21">
+			  				<span class="day-date"><small>Sat</small><br />
+							21</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb22" aria-expanded="true" aria-controls="feb22">
+			  				<span class="day-date"><small>Sun</small><br />
+							22</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb16">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							16<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb17">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							17<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb18">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							18<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb19">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb20">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							20<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							20<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb21">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							21<sup>st</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb22">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							22<sup>nd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb23" aria-expanded="true" aria-controls="feb23">
+			  				<span class="day-date"><small>Mon</small><br />
+							23</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb24" aria-expanded="true" aria-controls="feb24">
+			  				<span class="day-date"><small>Tue</small><br />
+							24</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb25" aria-expanded="true" aria-controls="feb25">
+			  				<span class="day-date"><small>Wed</small><br />
+							25</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb26" aria-expanded="true" aria-controls="feb26">
+			  				<span class="day-date"><small>Thu</small><br />
+							26</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb27" aria-expanded="true" aria-controls="feb27">
+			  				<span class="day-date"><small>Fri</small><br />
+							27</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb28" aria-expanded="true" aria-controls="feb28">
+			  				<span class="day-date"><small>Sat</small><br />
+							28</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Sun</small><br />
+							1</span>
+						</span>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb23">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							23<sup>rd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb24">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							24<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb25">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							25<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb26">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb27">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							27<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							27<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb28">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							28<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb29">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							29<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+			</div><!-- /#july -->
+
+<!-- ======================================== AUGUST -->
+			<div id="august">
+				<div class="row text-center row-month">
+					August 2015
+				</div>
+			
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Mon</small><br />
+							23</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Tue</small><br />
+							24</span>
+						</span>
+					</li>
+					<li class="no-event">
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Wed</small><br />
+							25</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Thu</small><br />
+							26</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Fri</small><br />
+							27</span>
+						</span>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Sat</small><br />
+							28</span>
+						</span>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb1" aria-expanded="true" aria-controls="feb1">
+			  				<span class="day-date"><small>Sun</small><br />
+							1</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb1">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							1<sup>st</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb2" aria-expanded="true" aria-controls="feb2">
+			  				<span class="day-date"><small>Mon</small><br />
+							2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb3" aria-expanded="true" aria-controls="feb3">
+			  				<span class="day-date"><small>Tue</small><br />
+							3</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb4" aria-expanded="true" aria-controls="feb4">
+			  				<span class="day-date"><small>Wed</small><br />
+							4</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb5" aria-expanded="true" aria-controls="feb5">
+			  				<span class="day-date"><small>Thu</small><br />
+							5</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb6" aria-expanded="true" aria-controls="feb6">
+			  				<span class="day-date"><small>Fri</small><br />
+							6</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb7" aria-expanded="true" aria-controls="feb7">
+			  				<span class="day-date"><small>Sat</small><br />
+							7</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb8" aria-expanded="true" aria-controls="feb8">
+			  				<span class="day-date"><small>Sun</small><br />
+							8</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb2">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							2<sup>nd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb3">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							3<sup>rd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb4">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							4<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb5">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							5<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb6">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							6<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							6<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb7">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							7<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb8">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							8<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb9" aria-expanded="true" aria-controls="feb9">
+			  				<span class="day-date"><small>Mon</small><br />
+							9</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb10" aria-expanded="true" aria-controls="feb10">
+			  				<span class="day-date"><small>Tue</small><br />
+							10</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb11" aria-expanded="true" aria-controls="feb11">
+			  				<span class="day-date"><small>Wed</small><br />
+							11</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb12" aria-expanded="true" aria-controls="feb12">
+			  				<span class="day-date"><small>Thu</small><br />
+							12</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb13" aria-expanded="true" aria-controls="feb13">
+			  				<span class="day-date"><small>Fri</small><br />
+							13</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb14" aria-expanded="true" aria-controls="feb14">
+			  				<span class="day-date"><small>Sat</small><br />
+							14</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb15" aria-expanded="true" aria-controls="feb15">
+			  				<span class="day-date"><small>Sun</small><br />
+							15</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb9">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							9<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb10">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							10<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb11">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							11<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb12">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							12<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb13">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							13<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							13<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb14">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							14<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb15">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							15<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+					
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb16" aria-expanded="true" aria-controls="feb16">
+			  				<span class="day-date"><small>Mon</small><br />
+							16</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb17" aria-expanded="true" aria-controls="feb17">
+			  				<span class="day-date"><small>Tue</small><br />
+							17</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb18" aria-expanded="true" aria-controls="feb18">
+			  				<span class="day-date"><small>Wed</small><br />
+							18</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb19" aria-expanded="true" aria-controls="feb19">
+			  				<span class="day-date"><small>Thu</small><br />
+							19</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb20" aria-expanded="true" aria-controls="feb20">
+			  				<span class="day-date"><small>Fri</small><br />
+							20</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb21" aria-expanded="true" aria-controls="feb21">
+			  				<span class="day-date"><small>Sat</small><br />
+							21</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb22" aria-expanded="true" aria-controls="feb22">
+			  				<span class="day-date"><small>Sun</small><br />
+							22</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb16">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							16<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb17">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							17<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb18">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							18<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb19">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							19<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb20">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							20<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							20<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb21">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							21<sup>st</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb22">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							22<sup>nd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+
+	<!-- ROW of additional dates -->
+				<ul class="list-unstyled list-inline additional-dates">
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb23" aria-expanded="true" aria-controls="feb23">
+			  				<span class="day-date"><small>Mon</small><br />
+							23</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb24" aria-expanded="true" aria-controls="feb24">
+			  				<span class="day-date"><small>Tue</small><br />
+							24</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li class="no-event">
+						<a class="btn-date" data-toggle="collapse" href="#feb25" aria-expanded="true" aria-controls="feb25">
+			  				<span class="day-date"><small>Wed</small><br />
+							25</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb26" aria-expanded="true" aria-controls="feb26">
+			  				<span class="day-date"><small>Thu</small><br />
+							26</span>
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb27" aria-expanded="true" aria-controls="feb27">
+			  				<span class="day-date"><small>Fri</small><br />
+							27</span>
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn-date" data-toggle="collapse" href="#feb28" aria-expanded="true" aria-controls="feb28">
+			  				<span class="day-date"><small>Sat</small><br />
+							28</span>
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<span class="btn-date btn-date-null">
+			  				<span class="day-date"><small>Sun</small><br />
+							1</span>
+						</span>
+					</li>
+				</ul>
+
+				<div class="collapse collapse-sm" id="feb23">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							23<sup>rd</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb24">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							24<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb25">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							25<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb26">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							26<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							5:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Head home for beerz <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb27">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							27<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+					<div class="row event-sm">
+						<div class="col-xs-2">
+							27<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							3:00pm
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Meeting with Obama <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb28">
+	  				<div class="row event-sm">
+						<div class="col-xs-2">
+							28<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-3">
+							All Day
+						</div><!-- /.col-xs-3 -->
+						<div class="col-xs-7">
+							Back to my dead end job <span class="glyphicon glyphicon-pencil pull-right" aria-hidden="true"></span>
+						</div><!-- /.col-xs-7 -->
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+				<div class="collapse collapse-sm" id="feb29">
+	  				<div class="row event-sm">
+	  					<div class="col-xs-2">
+							29<sup>th</sup>
+						</div><!-- /.col-xs-1 -->
+						<div class="col-xs-10">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add an Event
+						</div>
+					</div><!-- /.row .event-sm -->
+				</div><!-- /.collapse -->
+			</div><!-- /#august -->
+
+<!-- and so on... -->
 		
     	</div><!-- /.container-fluid -->
     
+    	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 	</body>
 </html>
