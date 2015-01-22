@@ -1,35 +1,111 @@
 
+/* ----------------------------------------------------------------- Bootstrap Overwrites */
+body {
+	font-family: 'Open Sans Condensed', sans-serif;     
+}
+a, a:visited {
+	color: #fff;
+}
 a:focus, a:hover {
 	text-decoration: none;
+	text-shadow: 0 2px 0 #333333;
+	color: #fff;
 }
-header {
-	padding: 8px 0 5px 0;
+/* ------------------ Getting rid of gutters */
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+/* ------------------- Custom styling the collapse reveals */
+.panel {
+	background-color: rgba(255,255,255,0);
+	-webkit-box-shadow: 0 1px 1px rgba(255,255,255,.3);
+	box-shadow: 0 1px 1px rgba(255,255,255,.3);
+}
+.panel-body {
+  	padding: 0;
 }
 .panel-group {
-  	margin-bottom: 3px;
-  	
+  	margin: 0;
+  	padding: 0;
+}
+.panel-group .panel {
+  border-radius: 0;
 }
 .panel-default {
   	border: none;
 }
-.panel-default>.panel-heading-edit {
-	background-color: #fff;
-	border-radius: 0;
-	padding: 0 10px;
-	border-color: #000;
+.panel-default>.panel-heading .badge {
+	color: #f5f5f5;
+	background-color: rgba(255,255,255,.2);
 }
-.panel-body {
-  	padding: 0 15px;
+.panel-default>.panel-heading {
+	color: #fff;
+	background-color: rgba(255, 255, 255, .2);
+	border-color: #ddd;
 }
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
 	border-top: none;
 }
+/* ----------------- Events count indicator */
+.badge {
+	border-radius: 50%;
+	font-weight: 300;
+	color: #f5f5f5;
+	background-color: rgba(255,255,255,.2);
+}
+/* ----------------- Forms */
+.input-group {
+	margin-bottom: 5px;
+}
+
+/* ----------------------------------------------------------------- Custom Styles */
+#january {
+	padding-bottom: 20px;
+	background: -webkit-linear-gradient(180deg, #24C6DC 10%, #514A9D 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(180deg, #24C6DC 10%, #514A9D 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(180deg, #24C6DC 10%, #514A9D 90%); /* IE10 */
+	background:      -o-linear-gradient(180deg, #24C6DC 10%, #514A9D 90%); /* Opera 11.10+ */
+	background:         linear-gradient(180deg, #24C6DC 10%, #514A9D 90%); /* W3C */
+}
+#february {
+	padding-bottom: 20px;
+	background: -webkit-linear-gradient(180deg, #514A9D 10%, #55941B 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(180deg, #514A9D 10%, #55941B 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(180deg, #514A9D 10%, #55941B 90%); /* IE10 */
+	background:      -o-linear-gradient(180deg, #514A9D 10%, #55941B 90%); /* Opera 11.10+ */
+	background:         linear-gradient(180deg, #514A9D 10%, #55941B 90%); /* W3C */   
+}
+#march {
+	padding-bottom: 20px;
+	background: -webkit-linear-gradient(180deg, #55941B 10%, #27A116 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(180deg, #55941B 10%, #27A116 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(180deg, #55941B 10%, #27A116 90%); /* IE10 */
+	background:      -o-linear-gradient(180deg, #55941B 10%, #27A116 90%); /* Opera 11.10+ */
+	background:         linear-gradient(180deg, #55941B 10%, #27A116 90%); /* W3C */   
+}
+/* --------------- Month + Year headers */
+.row-month {
+	padding: 10px 0;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+/* -------------- Additional padding to the top five reveals */
+.collapse-pad {
+	padding: 20px;
+	background-color: rgba(255,255,255,.5);
+}
 span.panel-title {
 	font-size: 13px;
 }
-.event {
-	padding: 20px 0;
-}
+/* -------------- Styling the dates (day + number) */
 span.day-date {
 	display: block;
 	font-size: 150%;
@@ -37,11 +113,55 @@ span.day-date {
 }
 span.day-date small {
 	font-size: 50%;
+	color: #fff;
+}
+span.btn-date-null span.day-date small {
+	color: #A6A6A6 !important;
 }
 span.day {
 	display: block;
 	margin-top: -30px;
 }
-.input-group {
-	margin-bottom: 5px;
+.event {
+	padding: 20px 0;
+	background-color: rgba(255,255,255,0);
 }
+/* --------------- Dates grid inline-list */
+ul.additional-dates {
+	text-align: center;
+	width: 100%;
+	padding: 20px 0 0 0;
+}
+ul.additional-dates li {
+	width: 13%;
+	padding: 0;
+	vertical-align: top;
+}
+.btn-date {
+	padding: 6px 0;
+}
+/* -------------- Disabled date */
+.btn-date-null {
+	color: #A6A6A6;
+}
+/* -------------- Dates grid reveals */
+.collapse-sm {
+	color: #fff;
+	width: 95%;
+	margin: 0 auto 20px auto
+}
+.event-sm {
+	padding: 5px 0;
+	font-size: 12px;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	letter-spacing: 1px;
+}
+
+.panel-default>.panel-heading-edit {
+	background-color: rgba(255,255,255,.2);
+	border-radius: 0;
+	padding: 0;
+	border-color: #000;
+}
+
+
